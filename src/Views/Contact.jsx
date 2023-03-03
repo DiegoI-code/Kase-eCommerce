@@ -26,6 +26,7 @@ const Contact = () => {
     try {
       const col = collection(db, "contacto");
       const order = await addDoc(col, datos);
+      console.log(order);
       contactoAlarm();
     } catch (error) {
       console.log("error", error);
@@ -88,10 +89,10 @@ const Contact = () => {
     console.log(message.value.length);
 
     if (
-      email.value.length != 0 &&
-      nombre.value.length != 0 &&
-      subject.value.length != 0 &&
-      message.value.length != 0
+      email.value.length !== 0 &&
+      nombre.value.length !== 0 &&
+      subject.value.length !== 0 &&
+      message.value.length !== 0
     ) {
       return true;
     } else {
@@ -110,7 +111,7 @@ const Contact = () => {
 
       <div className="container py-5">
         <div className="row py-5">
-          <form className="col-md-9 m-auto" method="post" role="form">
+          <form className="col-md-9 m-auto" method="post">
             <div className="row">
               <div className="form-group col-md-6 mb-3">
                 <label for="inputname">Nombre</label>

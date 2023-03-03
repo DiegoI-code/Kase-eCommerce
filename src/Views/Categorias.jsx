@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useParams } from "react-router-dom";
-import db from "../Service/Firebase";
 import {
-  doc,
-  getDoc,
   getDocs,
   collection,
   getFirestore,
@@ -11,9 +8,6 @@ import {
   where,
 } from "firebase/firestore";
 import ItemList from "../Components/ItemList/ItemList";
-import GlobalContextProvider, {
-  GlobalContext,
-} from "../Context/GlobalContextProvider";
 
 const Categorias = () => {
   const { Categoriaid } = useParams();

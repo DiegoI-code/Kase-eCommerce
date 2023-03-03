@@ -22,7 +22,7 @@ const Categories = () => {
         <div className="row">
           <div className="col-12 col-md-4 p-5 mt-3">
             <NavLink to={"/Categoria/Estacionados"}>
-              <img src={img1} className="rounded-circle img-fluid border" />
+              <img src={img1} alt={""} className="rounded-circle img-fluid border" />
             </NavLink>
             <h5 className="text-center mt-3 mb-3">Estacionados</h5>
             <p className="text-center">
@@ -36,7 +36,7 @@ const Categories = () => {
           </div>
           <div className="col-12 col-md-4 p-5 mt-3">
             <NavLink to={"/Categoria/Semiduros"}>
-              <img src={img2} className="rounded-circle img-fluid border" />
+              <img src={img2} alt={""} className="rounded-circle img-fluid border" />
             </NavLink>
             <h2 className="h5 text-center mt-3 mb-3">Semiduros</h2>
             <p className="text-center">

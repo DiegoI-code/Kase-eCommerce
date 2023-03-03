@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
-import useFirebase from "../../Hooks/useFirebase";
+
 import "./Formulario.css";
 import { addDoc, collection } from "firebase/firestore";
 import Swal from "sweetalert2";
-import GlobalContextProvider, {
+import {
   GlobalContext,
 } from "../../Context/GlobalContextProvider";
 import db from "../../Service/Firebase";
@@ -97,7 +97,7 @@ const Formulario = ({ cantTotal, compra, cart }) => {
     e.preventDefault();
     if (ValidateEmail(document.querySelector("input[name='email']").value)) {
       fetchGenerateTicket({ datos: formulario });
-      const size = Object.keys(formulario.purchase).length;
+      
     }
   };
 
@@ -126,10 +126,10 @@ const Formulario = ({ cantTotal, compra, cart }) => {
     const telefono = document.querySelector("input[name='telefono']");
 
     if (
-      email.value.length != 0 &&
-      nombre.value.length != 0 &&
-      apellido.value.length != 0 &&
-      telefono.value.length != 0 &&
+      email.value.length !== 0 &&
+      nombre.value.length !== 0 &&
+      apellido.value.length !== 0 &&
+      telefono.value.length !== 0 &&
       cartTotal > 0
     ) {
       setDisable(false);

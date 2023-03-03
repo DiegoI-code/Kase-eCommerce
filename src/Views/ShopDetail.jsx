@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom';
 import ItemCount from '../Components/ItemCount/ItemCount';
-import GlobalContextProvider, { GlobalContext } from '../Context/GlobalContextProvider';
+import { GlobalContext } from '../Context/GlobalContextProvider';
 
 
 
@@ -10,7 +10,7 @@ const ShopDetail = () => {
     const params = useParams();
     const {dataProds} = useContext(GlobalContext);
 
-    const prodElegido = (dataProds.filter(x => x.id == params.id));
+    const prodElegido = (dataProds.filter(x => x.id === params.id));
     const prodElegidoF = prodElegido[0]; // porque el filter devuelve un array con un objeto entonces el objeto est[a en el indice 0 del array]
 
 

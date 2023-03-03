@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import GlobalContextProvider, {
+import {
   GlobalContext,
 } from "../../Context/GlobalContextProvider";
 import "./Navbar.css";

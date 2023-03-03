@@ -10,6 +10,7 @@ const Item = (data) => {
             <img
               className="card-img rounded-0 img-fluid"
               src={data.prods.Img}
+              alt={""}
             />
             <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center"></div>
           </div>

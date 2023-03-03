@@ -1,13 +1,13 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import CartItemList from "../Components/CartItemList/CartItemList";
 import Formulario from "../Components/Formulario/Formulario";
-import GlobalContextProvider, {
+import {
   GlobalContext,
 } from "../Context/GlobalContextProvider";
 import "./Cart.css";
 
 const Cart = () => {
-  const { cart, addToCart, cartTotal, cantidadTotal, clear } =
+  const { cart, cartTotal, cantidadTotal } =
     useContext(GlobalContext);
 
   return (

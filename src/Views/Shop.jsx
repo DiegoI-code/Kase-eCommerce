@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import ItemList from "../Components/ItemList/ItemList";
-import GlobalContextProvider, {
-  GlobalContext,
-} from "../Context/GlobalContextProvider";
+import { GlobalContext } from "../Context/GlobalContextProvider";
 
 const Shop = () => {
   const { dataProds } = useContext(GlobalContext);

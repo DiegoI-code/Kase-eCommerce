@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import GlobalContextProvider, {
+import  {
   GlobalContext,
 } from "../../Context/GlobalContextProvider";
 
 const CartItem = (data) => {
-  const { eliminarProd, addToCart, cart, cartTotal } =
+  const { eliminarProd, addToCart } =
     useContext(GlobalContext);
 
   data = data.prods;

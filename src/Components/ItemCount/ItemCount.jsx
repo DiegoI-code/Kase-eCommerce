@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
-import GlobalContextProvider, {
+import {
   GlobalContext,
 } from "../../Context/GlobalContextProvider";
 
@@ -14,7 +14,7 @@ const ItemCount = ({ prod }) => {
   let contInicial = 0;
 
   /* If the product is in cart, the count will take current quantity as initial state */
-  if (isInCart(prod.id) == -1) {
+  if (isInCart(prod.id) === -1) {
     contInicial = 1;
   } else {
     contInicial = cart[isInCart(prod.id)].cantidad;
