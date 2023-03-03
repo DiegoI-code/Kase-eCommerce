@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Kase-eCommerce/static/css/main.38ea59f1.css",
+    "main.js": "/Kase-eCommerce/static/js/main.ac6c0fc3.js",
+    "static/js/787.3ac43629.chunk.js": "/Kase-eCommerce/static/js/787.3ac43629.chunk.js",
+    "static/media/categorias-estacionado.png": "/Kase-eCommerce/static/media/categorias-estacionado.7f70bd41414ea2bb44a0.png",
+    "static/media/categorias-semiduros.png": "/Kase-eCommerce/static/media/categorias-semiduros.cbc79935eb9339d0dbeb.png",
+    "static/media/carouselN3-2.png": "/Kase-eCommerce/static/media/carouselN3-2.d75887d4af39a52d548b.png",
+    "static/media/carouselN1.png": "/Kase-eCommerce/static/media/carouselN1.411d50fc4d591be19070.png",
+    "static/media/categorias-blandos.jpg": "/Kase-eCommerce/static/media/categorias-blandos.42bb65c1356840342e47.jpg",
+    "static/media/carouselN2.png": "/Kase-eCommerce/static/media/carouselN2.bfc19f41a7dec6a01056.png",
+    "static/media/cheese-svgrepo-com.svg": "/Kase-eCommerce/static/media/cheese-svgrepo-com.41377498e06fbae9a967ad82376c7d17.svg",
+    "index.html": "/Kase-eCommerce/index.html",
+    "main.38ea59f1.css.map": "/Kase-eCommerce/static/css/main.38ea59f1.css.map",
+    "main.ac6c0fc3.js.map": "/Kase-eCommerce/static/js/main.ac6c0fc3.js.map",
+    "787.3ac43629.chunk.js.map": "/Kase-eCommerce/static/js/787.3ac43629.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38ea59f1.css",
+    "static/js/main.ac6c0fc3.js"
+  ]
+}
